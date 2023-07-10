@@ -19,7 +19,11 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+      <footer className='flex items-center justify-center py-16'>
+                <p>Made with ❤️ by <a href="http://kevinocampo.vercel.app" target='_blank' className='text-purple-600'>Kev</a></p>
+      </footer></body>
+    
     </html>
   )
 }

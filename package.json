@@ -22,5 +22,8 @@
     "typescript": "5.1.6",
     "typewriter-effect": "^2.20.1",
     "usellm": "^0.13.0"
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.7"
   }
 }
