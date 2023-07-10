@@ -6,7 +6,7 @@ export default function Home() {
   const llm = useLLM({ serviceUrl: "https://usellm.org/api/llm" });
   const [prompt, setPrompt] = useState("");
   const [result, setResult] = useState("");
-  async function handleChange(e) {
+  async function handleChange(e:any) {
     e.preventDefault();
     try {
       await llm.chat({
@@ -27,7 +27,7 @@ export default function Home() {
   }
   return (
     <div className="min-h-screen mx-auto my-8 max-w-4xl">
-      <h1 className="text-center mb-4 text-2xl">Next Assistant AI</h1>
+      <h1 className="font_title text-center mb-4 text-2xl">Next Assistant AI</h1>
       <div className="flex justify-center items-center">
         <form method="post" onSubmit={handleChange}>
           <input
